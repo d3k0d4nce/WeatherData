@@ -1,0 +1,523 @@
+databaseChangeLog:
+  - changeSet:
+      id: DEV-1
+      author: d3k0d4nce
+      changes:
+        - createTable:
+            tableName: cities
+            remarks: Города
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: cities_pk
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+  - changeSet:
+      id: insert-cities
+      author: d3k0d4nce
+      changes:
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: name
+                  value: Tokyo
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 2
+              - column:
+                  name: name
+                  value: Jakarta
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 3
+              - column:
+                  name: name
+                  value: Delhi
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 4
+              - column:
+                  name: name
+                  value: Guangzhou
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 5
+              - column:
+                  name: name
+                  value: Mumbai
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 6
+              - column:
+                  name: name
+                  value: Manila
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 7
+              - column:
+                  name: name
+                  value: Shanghai
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 8
+              - column:
+                  name: name
+                  value: Sao Paulo
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 9
+              - column:
+                  name: name
+                  value: Seoul
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 10
+              - column:
+                  name: name
+                  value: Mexico City
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 11
+              - column:
+                  name: name
+                  value: Cairo
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 12
+              - column:
+                  name: name
+                  value: New York
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 13
+              - column:
+                  name: name
+                  value: Dhaka
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 14
+              - column:
+                  name: name
+                  value: Beijing
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 15
+              - column:
+                  name: name
+                  value: Kolkata
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 16
+              - column:
+                  name: name
+                  value: Bangkok
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 17
+              - column:
+                  name: name
+                  value: Shenzhen
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 18
+              - column:
+                  name: name
+                  value: Moscow
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 19
+              - column:
+                  name: name
+                  value: Buenos Aires
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 20
+              - column:
+                  name: name
+                  value: Lagos
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 21
+              - column:
+                  name: name
+                  value: Istanbul
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 22
+              - column:
+                  name: name
+                  value: Karachi
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 23
+              - column:
+                  name: name
+                  value: Bangalore
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 24
+              - column:
+                  name: name
+                  value: Ho Chi Minh City
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 25
+              - column:
+                  name: name
+                  value: Osaka
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 26
+              - column:
+                  name: name
+                  value: Chengdu
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 27
+              - column:
+                  name: name
+                  value: Tehran
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 28
+              - column:
+                  name: name
+                  value: Kinshasa
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 29
+              - column:
+                  name: name
+                  value: Rio de Janeiro
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 30
+              - column:
+                  name: name
+                  value: Chennai
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 31
+              - column:
+                  name: name
+                  value: Xi'an
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 32
+              - column:
+                  name: name
+                  value: Lahore
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 33
+              - column:
+                  name: name
+                  value: Chongqing
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 34
+              - column:
+                  name: name
+                  value: Los Angeles
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 35
+              - column:
+                  name: name
+                  value: Baoding
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 36
+              - column:
+                  name: name
+                  value: London
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 37
+              - column:
+                  name: name
+                  value: Paris
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 38
+              - column:
+                  name: name
+                  value: Linyi
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 39
+              - column:
+                  name: name
+                  value: Dongguan
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 40
+              - column:
+                  name: name
+                  value: Hyderabad
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 41
+              - column:
+                  name: name
+                  value: Tianjin
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 42
+              - column:
+                  name: name
+                  value: Lima
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 43
+              - column:
+                  name: name
+                  value: Wuhan
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 44
+              - column:
+                  name: name
+                  value: Nanyang
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 45
+              - column:
+                  name: name
+                  value: Hangzhou
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 46
+              - column:
+                  name: name
+                  value: Foshan
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 47
+              - column:
+                  name: name
+                  value: Nagoya
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 48
+              - column:
+                  name: name
+                  value: Taipei
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 49
+              - column:
+                  name: name
+                  value: Tongshan
+        - insert:
+            tableName: cities
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 50
+              - column:
+                  name: name
+                  value: Luanda
+  - changeSet:
+      id: create_weather_data_table
+      author: d3k0d4nce
+      changes:
+        - createTable:
+            tableName: weather_data
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: weather_data_pkey
+                    nullable: false
+              - column:
+                  name: humidity
+                  type: double
+              - column:
+                  name: pressure
+                  type: double
+              - column:
+                  name: temperature
+                  type: double
+              - column:
+                  name: visibility
+                  type: int
+              - column:
+                  name: weather_description
+                  type: varchar(255)
+              - column:
+                  name: wind_direction
+                  type: int
+              - column:
+                  name: wind_speed
+                  type: double
+              - column:
+                  name: city_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk42ebcfkbvriq7v4hy4ftm5le9
+                    references:
+                      tableName: cities
+                      columnName: id
+                      onDelete: NO_ACTION
+                      onUpdate: NO_ACTION

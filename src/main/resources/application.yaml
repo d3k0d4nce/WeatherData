@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://localhost:5433/postgres
     username: postgres
     password: postgres
   jpa:
@@ -14,3 +14,8 @@ spring:
   main:
     web-application-type: servlet
     allow-bean-definition-overriding: true
+  liquibase:
+    change-log: classpath:liquibase/changelog.yaml
+
+server:
+  port: 8081

@@ -91,7 +91,7 @@ public class WeatherDataServiceImpl implements WeatherDataService {
 
     private WeatherData getWeatherData(City city) throws JsonProcessingException {
 
-        String weatherData = webCityClient.get().uri("?q=" + city.getCityName() + key).retrieve().bodyToMono(String.class).block();
+        String weatherData = webCityClient.get().uri("?q=" + city.getName() + key).retrieve().bodyToMono(String.class).block();
 
         ObjectMapper objectMapper = new ObjectMapper();
         JsonNode jsonNode = objectMapper.readTree(weatherData);
