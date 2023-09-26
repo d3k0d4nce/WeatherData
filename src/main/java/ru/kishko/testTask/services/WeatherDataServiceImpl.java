@@ -43,7 +43,7 @@ public class WeatherDataServiceImpl implements WeatherDataService {
     }
 
     @Override
-    public WeatherData updateWeatherData(WeatherData weatherData) {
+    public void updateWeatherData(WeatherData weatherData) {
 
         WeatherData weatherDataDB = weatherDataRepository.findWeatherDataByCity(weatherData.getCity());
 
@@ -85,7 +85,6 @@ public class WeatherDataServiceImpl implements WeatherDataService {
 
         weatherDataRepository.save(weatherDataDB);
 
-        return weatherDataDB;
     }
 
 

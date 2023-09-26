@@ -6,5 +6,5 @@ import ru.kishko.testTask.entities.WeatherData;
 public interface WeatherDataService {
     void collectWeatherData() throws JsonProcessingException;
 
-    WeatherData updateWeatherData(WeatherData weatherData);
+    void updateWeatherData(WeatherData weatherData);
 }
