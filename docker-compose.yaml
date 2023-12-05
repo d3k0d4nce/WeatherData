@@ -5,11 +5,11 @@ services:
     image: 'postgres:15'
     container_name: 'java-postgres'
     environment:
-      - 'POSTGRES_USER=postgres'
-      - 'POSTGRES_PASSWORD=postgres'
-      - 'POSTGRES_DB=postgres'
+      - 'POSTGRES_USER=${DB_USERNAME}'
+      - 'POSTGRES_PASSWORD=${DB_PASSWORD}'
+      - 'POSTGRES_DB=${DB_NAME}'
     ports:
-      - "5433:5432"
+      - "${DB_PORT}:5432"
 
   app:
     build: ./
@@ -17,9 +17,9 @@ services:
     depends_on:
       - postgres
     environment:
-      - 'SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/postgres'
-      - 'SPRING_DATASOURCE_USERNAME=postgres'
-      - 'SPRING_DATASOURCE_PASSWORD=postgres'
+      - 'SPRING_DATASOURCE_URL=jdbc:postgresql://${DB_PASSWORD}:5432/${DB_NAME}'
+      - 'SPRING_DATASOURCE_USERNAME=${DB_USERNAME}'
+      - 'SPRING_DATASOURCE_PASSWORD=${DB_PASSWORD}'
       - 'SPRING_JPA_HIBERNATE_DDL_AUTO=update'
     ports:
       - "8081:8081"
