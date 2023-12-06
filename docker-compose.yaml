@@ -17,7 +17,8 @@ services:
     depends_on:
       - postgres
     environment:
-      - 'SPRING_DATASOURCE_URL=jdbc:postgresql://${DB_PASSWORD}:5432/${DB_NAME}'
+      - 'SERVER_PORT= 8181'
+      - 'SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/${DB_NAME}'
       - 'SPRING_DATASOURCE_USERNAME=${DB_USERNAME}'
       - 'SPRING_DATASOURCE_PASSWORD=${DB_PASSWORD}'
       - 'SPRING_JPA_HIBERNATE_DDL_AUTO=update'
